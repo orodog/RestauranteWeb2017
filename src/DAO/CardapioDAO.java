@@ -47,8 +47,9 @@ public class CardapioDAO {
 	
 	 public List<Cardapio> listarCardapio() throws SQLException {
 	  
-	  db = new DatabaseConnect(); String sql = "select * from mercadoria"; st =
-	  conn.prepareStatement(sql); ResultSet resultSet = st.executeQuery();
+	  db = new DatabaseConnect(); 
+	  String sql = "select * from mercadoria"; st = conn.prepareStatement(sql); 
+	  ResultSet resultSet = st.executeQuery();
 	  
 	  List<Cardapio> cardapioList = new ArrayList<Cardapio>();
 	  
@@ -58,11 +59,12 @@ public class CardapioDAO {
 	  
 	  cardapioItem.setIdProduto(resultSet.getInt("id"));
 	  cardapioItem.setDescricao(resultSet.getString("descricao"));
-	  cardapioItem.
-	  setValorUnitario(Double.parseDouble(resultSet.getString("Preco")));
+	  cardapioItem.setValorUnitario(Double.parseDouble(resultSet.getString("Preco")));
 	  cardapioItem.setTipoProduto(resultSet.getString("tipo"));
 	  cardapioItem.setDisponibilidade(resultSet.getString("disponibilidade"));
-	  cardapioList.add(cardapioItem); }
+	  cardapioList.add(cardapioItem); 
+	  
+	  }
 	  
 	  return cardapioList;
 	  

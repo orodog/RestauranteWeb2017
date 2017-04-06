@@ -1,28 +1,64 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Excluir Produto</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="id_cadastrar">Cadastrar</title>  
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/bootstrap.min.js"></script>
+
 </head>
+
 <body>
-	<h2 id="h2">Excluir produto</h2>
-	
+    <!--teste-->  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.jsp">Menu Principal</a>
+            
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="consultarCardapio.jsp">Consultar</a>
+                <li><a href="cadastrar.jsp">Cadastrar</a> 
+                <li><a href="alterar.jsp">Alterar</a>   
+                <li><a href="excluir.jsp">Excluir</a>   
+                </li>
+               </ul>
+            </div>
+        </div>
+    </nav>
+   <!-- Container Principal -->
+<div id="main" class="container-fluid">
+ <h3 class="page-header">Excluir Produto</h3>
+</div>
 	<div>
 	<form action="Cardapio.do?acao=Excluir" method="post">
-		
 		<fieldset>
-			<label for="id_mercadoria">indique o codigo do produto</label> 
-			<input id="id_mercadoria" name="id_mercadoria">
+		<div class="input-group">
+		  <span for="id_mercadoria" class="input-group-addon"  id="basic-addon2">ID</span>
+  			<input type="text" class="form-control" id="id_mercadoria" name="id_mercadoria" placeholder="id do Produto" aria-describedby="basic-addon2">
+		</div>
 		</fieldset>
 		
-		<input type="submit" name="Excluir" value="Excluir" />
-	
+		<div class="btn-group" role="group" aria-label="...">
+  			<button type="submit" name="cadastrar" value="Excluir" class="btn btn-danger">Excluir</button>
+		</div>
 		<h4>${Mensagem}</h4>
 	</form>
-	</div>
-	<div>
-		<a href="index.jsp"><button>Voltar</button></a>
-	</div>		
+		<div class="btn-group" role="group" aria-label="...">
+  			<a href="index.jsp"><button type="button" class="btn btn-info">Voltar</button></a>
+		</div>
 	
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
