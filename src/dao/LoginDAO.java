@@ -1,4 +1,4 @@
-package DAO;
+package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Modal.Cardapio;
-import Modal.Login;
+import modal.Cardapio;
+import modal.Login;
 
 public class LoginDAO {
 	private PreparedStatement st;

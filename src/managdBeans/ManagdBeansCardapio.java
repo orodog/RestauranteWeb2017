@@ -2,8 +2,8 @@ package managdBeans;
 
 import java.util.List;
 
-import Modal.Cardapio;
-import DAO.CardapioDAO;
+import modal.Cardapio;
+import dao.CardapioDAO;
 
 public class ManagdBeansCardapio {
 

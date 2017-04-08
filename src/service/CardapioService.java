@@ -1,7 +1,7 @@
-package Service;
+package service;
 
-import DAO.CardapioDAO;
-import Modal.Cardapio;
+import modal.Cardapio;
+import dao.CardapioDAO;
 
 public class CardapioService {
 

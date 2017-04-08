@@ -1,4 +1,4 @@
-package Modal;
+package modal;
 
 public class Cardapio  {
 

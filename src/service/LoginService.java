@@ -1,4 +1,4 @@
-package Service;
+package service;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-import Criptografia.CriptografiaSenha;
-import Modal.Login;
-import DAO.LoginDAO; 
+import modal.Login;
+import criptografia.CriptografiaSenha;
+import dao.LoginDAO;
 
 public class LoginService {
 

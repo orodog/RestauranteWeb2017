@@ -1,11 +1,10 @@
-package DAO;
+package dao;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import Modal.Cardapio;
-import Modal.Cardapio;
+import modal.Cardapio;
 
 public class CardapioDAO {
 	private ArrayList<Cardapio> cardapioList;
